@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.navbar {
+  background-color: #3E4E50;
+  width: 100%;
+  z-index: 80;
+}
+
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  padding-top: 50px;
+}
+.hero-cont {
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 0 250px;
+}
+.hero-title {
+  margin-bottom: 2rem;
+}
+
+.carousel-item img {
+  height: 500px; /* Ajusta esta altura según tus necesidades */
+  object-fit: cover; /* Esto asegurará que las imágenes se adapten a la altura sin distorsionarse */
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+{
+  "name": "halconenvuelo",
+  "version": "1.0.0",
+  "description": "Bienvenido a Halcón en Vuelo, un espacio dedicado a la fascinante vida de los halcones. Descubre la majestuosidad y agilidad de estas aves de presa, conocidas por su velocidad y precisión inigualables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.6"
+  }
+}
