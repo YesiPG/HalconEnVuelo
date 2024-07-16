@@ -1,40 +1,11 @@
 @use "var";
 @use "mixins";
 
-.navbar{
+.img-logo{
+    max-width: 100%;
+    width: 30px;
+}
+
+header{
     background-color: var.$bg-gris;
-    width: 100%;
-    z-index: 80;
-}
-
-.navbar-custom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.hero{
-
-   padding-top: 50px;
-
-    &-cont{
-        top: 50px;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($color: #000000, $alpha: .5);
-        @include mixins.flex(center,center);
-        flex-direction: column;
-        color: var.$blanco;
-        padding: 0 250px;
-    }
-
-    &-title{
-        margin-bottom: 2rem;
-    }
-}
-
-.carousel-item img {
-    height: 500px; /* Ajusta esta altura según tus necesidades */
-    object-fit: cover; /* Esto asegurará que las imágenes se adapten a la altura sin distorsionarse */
 }
