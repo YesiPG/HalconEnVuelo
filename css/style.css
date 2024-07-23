@@ -1,10 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
 .img-logo {
   max-width: 100%;
-  width: 30px;
+  width: 35px;
 }
 
 header {
   background-color: #3E4E50;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-family: "Roboto Serif", serif;
+}
+
+.carousel-item img {
+  height: 500px;
+}
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+.hero-modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 100px;
+  left: 25%;
+  width: 50%;
+  padding: 10px 20px;
+}
+.hero-modal h1 {
+  font-family: "Aclonica", sans-serif;
+}
+.hero-modal p {
+  font-family: "Roboto Serif", serif;
+}
+@media screen and (max-width: 768px) {
+  .hero-modal {
+    top: 50px;
+    width: 75%;
+    left: 13%;
+  }
+  .hero-modal h1 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero-modal {
+    width: 95%;
+    left: 2.5%;
+  }
+  .hero-modal h1 {
+    font-size: 26px;
+  }
+}
+
+.about h2, .about h3, .about h4 {
+  font-family: "Aclonica", sans-serif;
+}
+.about p {
+  font-family: "Roboto Serif", serif;
+}
+.about-cont {
+  background-color: #6D9DC5;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+
+.informacion img {
+  max-width: 100%;
+  width: 250px;
+  object-fit: cover;
+}
+.informacion h3 {
+  color: #ffffff;
+  font-family: "Aclonica", sans-serif;
+}
+.informacion p {
+  color: #ffffff;
+  font-family: "Roboto Serif", serif;
+}
+.informacion-cont1 {
+  background-color: #1B4F72;
+}
+.informacion-cont2 {
+  background-color: #6D9DC5;
 }
 
 *, *::after, *::before {

@@ -1,0 +1,43 @@
+@use "var";
+
+.about{
+    & h2,h3,h4{
+        font-family: var.$family-titulo;
+    }
+
+    & p{
+        font-family: var.$family-parrafo;
+    }
+
+    &-cont{
+        background-color: var.$azul-claro;
+        border-radius: 10px;
+        padding: 10px 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.informacion{
+    & img{
+        max-width: 100%;
+        width: 250px;
+        object-fit: cover;
+    }
+
+    & h3{
+        color: var.$blanco;
+        font-family: var.$family-titulo;
+    }
+
+    & p{
+        color: var.$blanco;
+        font-family: var.$family-parrafo;
+    }
+
+    &-cont1{
+        background-color: var.$azul-oscuro;
+    }
+    &-cont2{
+        background-color: var.$azul-claro;
+    }
+}
