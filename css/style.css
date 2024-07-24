@@ -7,15 +7,17 @@
 
 header {
   background-color: #3E4E50;
+  padding: 2px 4px;
 }
 
 .nav-link {
   color: #ffffff;
   font-family: "Roboto Serif", serif;
+  font-size: 16px;
 }
 
 .carousel-item img {
-  height: 500px;
+  height: 700px;
 }
 @media screen and (max-width: 768px) {
   .carousel-item img {
@@ -30,16 +32,18 @@ header {
 
 .hero-modal {
   background-color: rgba(0, 0, 0, 0.6);
-  top: 100px;
+  top: 200px;
   left: 25%;
   width: 50%;
   padding: 10px 20px;
 }
 .hero-modal h1 {
   font-family: "Aclonica", sans-serif;
+  font-size: 28px;
 }
 .hero-modal p {
   font-family: "Roboto Serif", serif;
+  font-size: 14px;
 }
 @media screen and (max-width: 768px) {
   .hero-modal {
@@ -48,7 +52,7 @@ header {
     left: 13%;
   }
   .hero-modal h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -57,21 +61,19 @@ header {
     left: 2.5%;
   }
   .hero-modal h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 
-.about h2, .about h3, .about h4 {
-  font-family: "Aclonica", sans-serif;
-}
-.about p {
-  font-family: "Roboto Serif", serif;
-}
 .about-cont {
   background-color: #6D9DC5;
   border-radius: 10px;
   padding: 10px 30px;
   margin-bottom: 20px;
+}
+.about-list li {
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
 }
 
 .informacion img {
@@ -82,16 +84,150 @@ header {
 .informacion h3 {
   color: #ffffff;
   font-family: "Aclonica", sans-serif;
+  font-size: 20px;
 }
 .informacion p {
   color: #ffffff;
   font-family: "Roboto Serif", serif;
+  font-size: 16px;
 }
 .informacion-cont1 {
   background-color: #1B4F72;
 }
 .informacion-cont2 {
   background-color: #6D9DC5;
+}
+.informacion-list {
+  background-color: #1B4F72;
+}
+.informacion-list li {
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
+}
+.informacion-fondoImg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.habitat img {
+  max-width: 100%;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px #1B4F72;
+  pointer-events: none;
+}
+.habitat h2, .habitat h3, .habitat h4 {
+  font-family: "Aclonica", sans-serif;
+}
+.habitat h4 {
+  top: 50%;
+  left: 10%;
+  text-shadow: 2px 4px 10px #3E4E50;
+  pointer-events: none;
+}
+.habitat h2 {
+  font-size: 24px;
+}
+.habitat h3 {
+  font-size: 20px;
+}
+.habitat h4 {
+  font-size: 16px;
+}
+.habitat p {
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
+}
+.habitat-card {
+  cursor: pointer;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.habitat-card:hover {
+  transform: translateY(-8px);
+}
+.habitat-card-parrafo {
+  top: 0%;
+  width: 97%;
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .habitat-card-parrafo {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .habitat-card-parrafo {
+    width: 94%;
+  }
+}
+.habitat-card-title {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+.habitat-card-show {
+  opacity: 1;
+  pointer-events: unset;
+}
+.habitat-card-show2 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dieta h2, .dieta h3, .dieta h4 {
+  font-family: "Aclonica", sans-serif;
+}
+.dieta h2 {
+  font-size: 24px;
+}
+.dieta h3 {
+  font-size: 20px;
+}
+.dieta h4 {
+  font-size: 16px;
+}
+.dieta p {
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
+}
+.dieta-cont img {
+  max-width: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media screen and (max-width: 576px) {
+  .dieta-cont img {
+    width: 300px;
+    height: 300px;
+  }
+}
+.dieta-cont2, .dieta-cont3 {
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 15px 30px;
+  background-color: #1B4F72;
+}
+.dieta-cont3 {
+  background-color: #6D9DC5;
+}
+.dieta-tecn li {
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
 }
 
 *, *::after, *::before {
@@ -106,6 +242,27 @@ header {
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+h2, h3, h4 {
+  font-family: "Aclonica", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-family: "Roboto Serif", serif;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

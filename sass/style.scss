@@ -15,3 +15,23 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+h2,h3,h4{
+    font-family: var.$family-titulo;
+    
+}
+
+h2{
+    font-size: var.$size2;
+}
+h3{
+    font-size: var.$size3;
+}
+h4{
+    font-size: var.$size5;
+}
+
+p{
+    font-family: var.$family-parrafo;
+    font-size: var.$size5;
+}
